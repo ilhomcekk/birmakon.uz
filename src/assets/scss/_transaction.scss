@@ -1,0 +1,105 @@
+.transaction__page__row {
+  display: flex;
+
+  .transaction__request__row {
+    position: relative;
+
+    .transaction__request__card {
+      z-index: 1;
+      position: absolute;
+      color: #ebebeb;
+      top: 20px;
+      right: 20px;
+
+      @media only screen and (max-width: 800px) {
+        right: auto;
+      }
+
+      @media only screen and (max-width: 450px) {
+        right: 70px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+
+  .transaction__page__rigth {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .transaction__request__right__error__text {
+    font-size: 10px;
+    color: red;
+  }
+
+  .transaction__page__title {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .transaction__page__request__price {
+    display: flex;
+    justify-content: space-between;
+
+    .transaction__request__row {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .transaction__request__right {
+        width: -webkit-fill-available;
+
+        .transaction__input {
+          padding: 7px 10px;
+          outline: none;
+          border-radius: 7px;
+          border: 1px solid #0f3a7b;
+          margin: 10px 0 6px 0;
+          width: -webkit-fill-available;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 780px) {
+      margin: 0px 0 20px 0;
+    }
+
+    @media only screen and (max-width: 780px) {
+      flex-direction: column;
+    }
+
+    .transaction__page__request__form__group {
+      width: 40%;
+
+      @media only screen and (max-width: 780px) {
+        width: -webkit-fill-available;
+      }
+
+      .transaction__page__request__label {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .transaction__page__request__input {
+        border-radius: 7px;
+        border: 1px solid steelblue;
+        padding: 10px 20px;
+        outline: none;
+        margin-top: 10px;
+        width: -webkit-fill-available;
+      }
+    }
+  }
+
+  .transaction__page__table {
+    margin-bottom: 80px;
+  }
+}
+
+.transaction__request__right__button {
+  margin-top: 10px;
+}

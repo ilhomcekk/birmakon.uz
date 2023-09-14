@@ -1,0 +1,137 @@
+input[type="checkbox"]{
+    position: relative;
+}
+input[type="checkbox"]:checked::after{
+    content: "\2713";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    position: absolute;
+    color: #fff;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #131E3D;
+}
+.selected-tabb {
+    margin-bottom: 1rem;
+
+    .react-tabs__tab{
+        background: #EE9999;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        margin-right: 1rem;
+    }
+
+    .react-tabs__tab.react-tabs__tab--selected{
+        background: #EE4927;
+    }
+}
+.selected__title{
+    font-size: 42px;
+    color: #023047;
+    line-height: 1;
+}
+.recently-products .recently__title{
+    margin-bottom: 20px;
+    color: #023047;
+}
+.advertising__title {
+    color: #023047;
+    font-size: 38px;
+}
+.sellers{
+    margin: 2rem 0;
+}
+.seller-seller{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1rem 1rem 0;
+    width: 370px;
+    height: 275px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    position: relative;
+}
+.write__to-market{
+    color: #EE4927;
+    cursor: pointer;
+}
+.write__to-market:hover{
+    text-decoration: underline;
+}
+.seller-seller .fa-heart{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #EE4927;
+    cursor: pointer;
+}
+.seller-seller img{
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+.seller-seller .name__title{
+    color: #313131;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+}
+.seller-seller p{
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+.seller-seller .links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seller-seller .links .market__link{
+    color: #131E3D;
+    border-bottom: 1px solid #131E3D;
+    cursor: pointer;
+}
+.seller-seller .links .market__link:hover{
+    border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 600px){
+    .selected__title{
+        font-size: 22px;
+    }
+    .seller-seller{
+        width: 100%;
+        min-height: auto;
+        margin: 0 0 1rem 0;
+    }
+    .seller-seller .name__title{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .seller-seller p{
+        font-size: 14px;
+    }
+    .write__to-market{
+        font-size: 14px;
+    }
+    .seller .links .market__link{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 300px){
+    .delivery-cart__title{
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,66 @@
+@use "sass:math";
+
+@function prc($pxOne, $pxTwo) {
+   $result: math.div($pxOne, $pxTwo) * 100%;
+   @return $result;
+}
+
+@function rem($px) {
+   $result: math.div($px, 16) + rem;
+   @return $result;
+}
+
+@function em($px) {
+   $result: math.div($px, 16) + em;
+   @return $result;
+}
+
+@function strip-unit($number) {
+   @if type-of($number) == "number" and not unitless($number) {
+      @return math.div($number, $number * 0 + 1);
+   }
+   @return $number;
+}
+
+@function calcFluid($f-max, $f-min, $w-max: 1920, $w-min: 320, $units: rem) {
+   $f-max: strip-unit($f-max);
+   $f-min: strip-unit($f-min);
+   $k: to-fixed(math.div(($f-max - $f-min), ($w-max - $w-min)));
+   $b: $f-min - $k * $w-min;
+   $b: to-fixed(math.div($b, 16)) + $units;
+   @return calc(#{$k} * 100vw + #{$b});
+}
+
+@function to-fixed($float, $digits: 3) {
+   $sass-precision: 5;
+   $pow: pow(10, $digits);
+   @return math.div(round($float * $pow), $pow);
+}
+
+@function pow($x, $n) {
+   $ret: 1;
+   @if $n >= 0 {
+      @for $i from 1 through $n {
+         $ret: $ret * $x;
+      }
+   } @else {
+      @for $i from $n to 0 {
+         $ret: math.div($ret, $x);
+      }
+   }
+   @return $ret;
+}
+
+@mixin hiddenText($digits, $lineHeight) {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: $digits;
+   line-height: rem($lineHeight);
+   height: rem($lineHeight * $digits);
+}
+
+
+
+

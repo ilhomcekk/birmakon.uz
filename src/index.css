@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat'), url('./assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+#root {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 500;
+}
+body::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb{
+  background: #131E3D !important;
+  border-radius: 30px !important;
+}
+.back{
+  background: #fff;
+}
+
+*{
+  font-family: "Montserrat", "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  color: #131e3d;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  text-align: left;
+}
+
+/* .active {
+  background-color: transparent !important;
+  color: yellow !important;
+} */
+.brand__name {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #131E3D;
+  margin-bottom: 20px;
+}
+
+/* Loading */
+
+@keyframes ldio-k4ygfxzqhp {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+.ldio-k4ygfxzqhp > div {
+  transform-origin: 50px 50px;
+  animation: ldio-k4ygfxzqhp 0.12755102040816327s infinite linear;
+}
+.ldio-k4ygfxzqhp > div div {
+  position: absolute;
+  width: 11px;
+  height: 76px;
+  background: #e15b64;
+  left: 50px;
+  top: 50px;
+  transform: translate(-50%, -50%);
+}
+.ldio-k4ygfxzqhp > div div:nth-child(1) {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.ldio-k4ygfxzqhp > div div:nth-child(8) {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.ldio-k4ygfxzqhp > div div:nth-child(3) {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.ldio-k4ygfxzqhp > div div:nth-child(4) {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.ldio-k4ygfxzqhp > div div:nth-child(5) {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.ldio-k4ygfxzqhp > div div:nth-child(6) {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+.ldio-k4ygfxzqhp > div div:nth-child(7) {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+.loadingio-spinner-gear-hchart9hme {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+.ldio-k4ygfxzqhp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.24);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-k4ygfxzqhp div {
+  box-sizing: content-box;
+}
+
+.button__box__none__loading {
+  width: 0px;
+  height: 24px;
+}
+
+.carousel .thumbs {
+  white-space: -webkit-nowrap;
+}
+
+.react-tel-input .form-control {
+  padding: 1rem 0.5rem 1rem 45px !important;
+  height: 41.6px !important;
+  border-radius: 0.375rem !important;
+  outline: none !important;
+  width: 100% !important;
+  font-size: 16px !important;
+}
+
+.axis-vertical {
+  display: none !important;
+}
+
+.infinite-scroll-component {
+  padding: 0 7px;
+}
+
+.canvasjs-chart-credit {
+  display: none !important;
+}
+
+.react-responsive-modal-modal {
+  width: 100%;
+}
+.show__all{
+  display: block;
+  width: max-content;
+  font-size: 18px;
+  margin: 32px auto;
+  color: #fff;
+  text-align: center;
+  background: #131e3d;
+  border-radius: 8px;
+  padding: 12px 80px;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+.show__all:hover{
+  background: #11113d;
+}
+@media (max-width: 769px) {
+  .show__all{
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .show__all{
+    padding: 10px;
+    width: 100%;
+  }
+}
+.map-marker{
+  background: red;
+  z-index: 1324658674564354768;
+}
+.banner img{
+  height: 246px;
+  width: 100%;
+}
+@media (min-width: 769px){
+  .banner img:first-child{
+    grid-column: 1 / 3;
+  }
+}
+.mySwiper-arvr{
+  height: auto;
+}
+.exbitions .css-o69gx8-MuiCardMedia-root{
+  height: 200px !important;
+}
+@media (min-width: 1540px){
+  .sc-bdvvtL.hxWBCL{
+    max-width: 1440px !important;
+    width: 1440px !important;
+  }
+}
+.kfmLxz{
+  max-width: 1440px !important;
+}

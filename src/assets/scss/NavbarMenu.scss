@@ -1,0 +1,40 @@
+.menu-list{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    li{
+        &:not(:first-child){
+            margin-left: auto !important;
+        }
+        @media (max-width: 769px){
+            margin-right: 2rem;
+        }
+    }
+}
+.menu-list::-webkit-scrollbar{
+    // background: transparent;
+}
+.menu-list li{
+    // margin-right: 6rem;
+}
+.menu-list li a{
+    color: #313131;
+    white-space: nowrap;
+    padding: 6px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.menu-list li a:hover{
+    background-color: rgba(144, 202, 249, 0.18);
+}
+@media (max-width: 600px){
+    .menu-list li a{
+        font-size: 14px;
+    }
+    .mt-8{
+        margin-top: 1rem;
+    }
+    .mb-8{
+        margin-bottom: 1rem;
+    }
+}

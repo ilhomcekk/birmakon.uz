@@ -1,0 +1,49 @@
+.my__team__page {
+  .my__team__link {
+    width: -webkit-fill-available;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: navajowhite;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .my__team__user__not {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-style: italic;
+    }
+  }
+}
+.my_team_user_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 760px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  .my_team_user_card {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px rgb(187, 185, 185);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

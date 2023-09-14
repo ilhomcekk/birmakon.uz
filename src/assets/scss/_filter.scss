@@ -1,0 +1,469 @@
+.css-14pt78w-MuiSlider-rail{
+    background: #EE4927 !important;
+}
+.css-1gv0vcd-MuiSlider-track{
+    background: #EE4927 !important;
+    border-color: transparent !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+    background: none !important;
+    box-shadow: none !important;
+}
+.css-ahj2mt-MuiTypography-root{
+    font-family: unset !important;
+}
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+    padding: 0 !important;
+}
+.css-o4b71y-MuiAccordionSummary-content{
+    margin: 0 !important;
+}
+.css-15v22id-MuiAccordionDetails-root{
+    padding: 0 4px !important;
+}
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded{
+    margin: 0 !important;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    select{
+        width: -webkit-fill-available;
+        background: #f5f6f6;
+        padding: 1rem;
+        -webkit-appearance: none;
+    }
+}
+.filter .sidebar__filter{
+    width: 18%;
+}
+.filter .sidebar__filter .filter__price .price__title{
+    font-size: 20px;
+}
+.filter .sidebar__filter .filter__price i{
+    color: #898989;
+}
+.filter .sidebar__filter .price__inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0 0.7rem 0;
+}
+.filter .sidebar__filter .price__inputs input{
+    width: 48%;
+    color: #000;
+    border: 1px solid #C4C4C4;
+    padding: 0 5px;
+    outline: none;
+}
+.filter .sidebar__filter .price__inputs input::placeholder{
+    color: #000;
+}
+.price__range1{
+    padding-bottom: 10px;
+}
+.filter .sidebar__filter .price__range{
+    width: 90%;
+}
+.filter .sidebar__filter .brand .brand__title{
+    font-size: 20px;
+}
+.filter .sidebar__filter .brand i{
+    color: #898989;
+}
+.filter .sidebar__filter .brand__search{
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #B5B0A1;
+    border-radius: 8px;
+    outline: none;
+    padding: 7px 10px;
+}
+.filter .sidebar__filter .brand__inputs{
+    padding: 10px 0;
+}
+.filter .sidebar__filter .brand__inputs .brand__input{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.filter .sidebar__filter .brand__inputs .brand__input input{
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    border: 1px solid #666666;
+}
+.filter .sidebar__filter .discount .discount__title{
+    font-size: 20px;
+}
+.filter .sidebar__filter .discount i{
+    color: #898989;
+}
+.filter .sidebar__filter .discount__inputs{
+    padding: 10px 0;
+}
+.filter .sidebar__filter .discount__inputs .discount__input{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.filter .sidebar__filter .discount__inputs .discount__input input{
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 1px;
+    border: 1px solid #666666;
+}
+.filter .sidebar__filter .color .color__title{
+    font-size: 20px;
+}
+.filter .sidebar__filter .color i{
+    color: #898989;
+}
+.filter .sidebar__filter .colors{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.filter .sidebar__filter .colors .box{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin: 7px 13px 7px 0;
+    background: #C211A7;
+}
+.filter .sidebar__filter .gender .gender__title{
+    font-size: 20px;
+}
+.filter .sidebar__filter .gender i{
+    color: #898989;
+}
+.filter .sidebar__filter .gender__inputs{
+    padding: 10px 0;
+}
+.filter .sidebar__filter .gender__inputs .gender__input{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.filter .sidebar__filter .gender__inputs .gender__input input{
+    margin-right: 12px;
+    height: 24px;
+    width: 24px;
+}
+.filter .sidebar__filter .size .size__title{
+    font-size: 20px;
+    font-weight: 100;
+}
+.filter .sidebar__filter .size i{
+    color: #898989;
+}
+.filter .sidebar__filter .size__input{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    padding: 7px 10px;
+    border: 1px solid #B5B0A1;
+}
+.filter .sidebar__filter .size__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.filter .size__boxes label{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #898989;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    &:hover{
+        border: 2px solid #000;
+    }
+    input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+    }
+}
+.filter .size__boxes label input:checked + div{
+    background: #11113D;
+}
+.filter .size__boxes label > div{
+    height: 38px;
+    min-width: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter .size__boxes input:checked ~ div {
+    background: #131E3D;
+    color: #fff;
+}
+.filter .sidebar__filter .size__boxes .box{
+    height: 38px;
+    width: 38px;
+    border-radius: 8px;
+    color: #898989;
+    margin: 7px 13px 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter .sidebar__filter .season .season__title{
+    font-size: 20px;
+    line-height: 1;
+}
+.filter .sidebar__filter .season i{
+    color: #898989;
+}
+.filter .sidebar__filter .season__inputs{
+    padding: 10px 0;
+}
+.filter .sidebar__filter .season__inputs .season__input{
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+.filter .sidebar__filter .season__inputs input{
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+}
+.filter .sidebar__filter .filter{
+    background: #131E3D;
+    color: #FFF;
+    cursor: pointer;
+}
+.filter .sidebar__filter .filter:hover{
+    background: #11113D;
+}
+.filter .sidebar__filter .reset{
+    background: rgba(238, 73, 39, 0.6);
+    color: #FFF;
+    cursor: pointer;
+}
+.filter .sidebar__filter .reset:hover{
+    background: rgba(238, 73, 39, 1);
+}
+.filter .all__products{
+    width: 80%;
+}
+.filter .all__products .products__menu ul{
+    display: flex;
+    align-items: center;
+}
+.filter .all__products .products__menu ul a{
+    color: #898989!important;
+    border-bottom: 1px solid #898989!important;
+}
+.filter .all__products .products__menu ul a:hover{
+    color: #131e3d!important;
+    border-bottom: 1px solid #131e3d!important;
+}
+.filter .all__products .products__menu ul a.active{
+    color: #131e3d!important;
+    border-bottom: 1px solid #131e3d!important;
+}
+.filter .all__products .products__menu ul li{
+    border-bottom: 1px solid rgba(137, 137, 137, 0.5);
+    color: #898989;
+    cursor: pointer;
+}
+.filter .products{
+    width: 100%;
+}
+.filter .products .cart__box.shadow-xl{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.filter__buttons{
+    justify-content: space-between;
+}
+.filter__buttons button{
+    width: 48%;
+    height: 45px;
+    border-radius: 5px;
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+label{
+    line-height: 1;
+}
+
+@media (min-width: 769px) and (max-width: 1025px){
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .filter .sidebar__filter{
+        width: 33%;
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 769px){
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .filter{
+        display: block;
+    }
+    .filter .sidebar__filter{
+        width: 100%;
+    }
+    .filter .all__products{
+        width: 100%;
+    }
+    .grid-cols-4{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .filter__buttons{
+        display: flex;
+    }
+    .filter__buttons button{
+        margin: 16px 1rem 16px 0 !important;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 600px){
+    .pages {
+        padding: 20px 16px !important;
+    }
+    .pages a {
+        font-size: 12px !important;
+    }
+    .filter{
+        display: block;
+    }
+    .filter .sidebar__filter{
+        width: 100%;
+    }
+    .filter .all__products{
+        width: 100%;
+    }
+    .filter__buttons{
+        display: flex;
+    }
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .filter .all__products .products__menu ul{
+        justify-content: space-between;
+    }
+    .filter .all__products .products__menu ul *{
+        margin-right: 0;
+        font-size: 14px;
+    }
+    .filter__title{
+        font-size: 22px;
+    }
+    .filter__buttons button{
+        font-size: 14px;
+    }
+    .md14{
+        font-size: 16px !important;
+    }
+    label{
+        font-size: 14px !important;
+    }
+    input{
+        font-size: 14px !important;
+    }
+    input[type=radio]{
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:before {
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:checked:after {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 415px) {
+    .pages {
+        padding: 20px 16px !important;
+    }
+    .pages a {
+        font-size: 12px !important;
+    }
+    .filter{
+        display: block;
+    }
+    .filter .sidebar__filter{
+        width: 100%;
+    }
+    .filter .all__products{
+        width: 100%;
+    }
+    .filter__buttons{
+        display: flex;
+    }
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .filter .all__products .products__menu ul{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .filter .all__products .products__menu ul *{
+        margin-right: 0;
+        font-size: 18px;
+    }
+    .filter__title{
+        font-size: 22px;
+    }
+    .filter .all__products .products__menu ul *{
+        font-size: 16px;
+        margin-top: 12px;
+    }
+    .filter__buttons button{
+        font-size: 14px;
+        height: 35px;
+    }
+    .md14{
+        font-size: 14px !important;
+    }
+    label{
+        font-size: 14px !important;
+    }
+    input{
+        font-size: 14px !important;
+    }
+    input[type=radio]{
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:before {
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:checked:after {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 300px){
+    .grid-cols-4 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

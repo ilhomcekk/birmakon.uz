@@ -1,0 +1,81 @@
+table{
+    border-radius: 8px;
+}
+table tr.payment-tr th{
+    background: rgba(238, 73, 39, 0.2) !important;
+    color: #131E3D;
+    font-size: 20px;
+    padding: 1.5rem 0;
+    font-weight: 500;
+}
+table tr th:first-child{
+    border-radius: 8px 0px 0px 0px;
+}
+table tr th:last-child{
+    border-radius: 0px 8px 0px 0px;
+}
+
+@media (min-width: 415px) and (max-width: 600px){
+    .pages {
+        padding: 20px 16px !important;
+    }
+    .pages a {
+        font-size: 12px !important;
+    }
+  table tr th{
+    font-size: 17px;
+    line-height: 18px;
+  }
+  .payment__title{
+    font-size: 22px;
+  }
+  input[type=radio]{
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:before {
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:checked:after {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .pages {
+        padding: 20px 16px !important;
+    }
+    .pages a {
+        font-size: 12px !important;
+    }
+    .payment__title{
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+    table tr th{
+      font-size: 10px;
+      line-height: 16px;
+      padding: 4px 0;
+    }
+    input[type=radio]{
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:before {
+        width: 14px;
+        height: 14px;
+    }
+    input[type=radio]:checked:after {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 300px){
+  table tr th{
+    font-size: 12px;
+    padding: 0.8rem 0;
+  }
+}
